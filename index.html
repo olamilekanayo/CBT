@@ -28,11 +28,22 @@
         <div id="btns">
             <button id="prev" onclick="prev()">previous</button>
             <button id="next" onclick="next()">next</button>
+            <button id="submitBtn">Submit</button>
 
         </div>
         </div>
+
+        <button onclick="showEvent(event)">Event</button>
     </main>
     
 </body>
 </html>
 <script src="cbt.js"></script>
+
+<script>
+    function showEvent(params){
+        console.log(params);
+        params.target.innerHTML = "Changed"
+        params.target.style.color = "green"
+    }
+</script>
